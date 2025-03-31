@@ -1,3 +1,32 @@
 body {
   background: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.box {
+  background: steelblue;
+  min-height: 100px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    max-width: 800px;
+  }
+
+  .box {
+    flex: 1;
+  }
 }
